@@ -1,0 +1,26 @@
+[28/10/2025 15:02:29] - Cadastro de novo candidato: Gabriel além da silva
+[28/10/2025 15:03:07] - Cadastro de novo candidato: pedro henrique malásia
+[28/10/2025 15:03:16] - Listagem de candidatos
+[28/10/2025 15:03:19] - Voto registrado para: Gabriel além da silva
+[28/10/2025 15:03:26] - Listagem de candidatos
+[28/10/2025 15:03:28] - Listagem de candidatos
+[28/10/2025 15:03:29] - Listagem de candidatos
+[28/10/2025 15:03:34] - Voto registrado para: pedro henrique malásia
+[28/10/2025 15:03:39] - Listagem de candidatos
+[28/10/2025 15:03:55] - Listagem de candidatos
+[28/10/2025 15:03:57] - Listagem de candidatos
+[28/10/2025 15:03:59] - Listagem de candidatos
+[28/10/2025 15:03:59] - Listagem de candidatos
+[28/10/2025 15:03:59] - Listagem de candidatos
+[28/10/2025 15:03:59] - Listagem de candidatos
+[28/10/2025 15:03:59] - Tentativa de opção de menu inválida: 22
+[28/10/2025 15:04:00] - Tentativa de opção de menu inválida: 22
+[28/10/2025 15:04:06] - Listagem de candidatos
+[28/10/2025 15:04:07] - Voto registrado para: Gabriel além da silva
+[28/10/2025 15:04:14] - Listagem de candidatos
+[28/10/2025 15:04:17] - Voto registrado para: pedro henrique malásia
+[28/10/2025 15:04:20] - Listagem de candidatos
+[28/10/2025 16:12:16] - Voto registrado para: Gabriel além da silva
+[28/10/2025 16:12:19] - Listagem de candidatos
+[28/10/2025 16:12:25] - Voto registrado para: pedro henrique malásia
+[28/10/2025 16:12:30] - Listagem de candidatos
