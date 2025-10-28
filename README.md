@@ -1,9 +1,9 @@
 ﻿# SISTEMA-DE-VOTAÇÃO-SIMPLES
 
 **Integrantes**
-- Pedro Henrique Fernandes Polita — RA: ______
-- [Colega 1] — RA: ______
-- [Colega 2] — RA: ______
+- Pedro Henrique Fernandes Polita — RA:1138911
+- [Guilherme Vieira Marques] — RA:1138951
+- [Gabriel de Oliveira] — RA:1139027 
 
 **Tema:** Sistema de Votação Simples
 
