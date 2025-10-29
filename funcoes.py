@@ -2,72 +2,21 @@
 import json
 from datetime import datetime
 
-DADOS_DIR = 'dados'
-DADOS_FILE = os.path.join(DADOS_DIR, 'votos.json')
-LOG_FILE = os.path.join(DADOS_DIR, 'log.txt')
+def garantir_arquivos():
+    # Garante que a pasta dados exista
+    if not os.path.exists("dados"):
+        os.makedirs("dados")
 
-def garantir_pastas():
-    os.makedirs(DADOS_DIR, exist_ok=True)
-    if not os.path.exists(DADOS_FILE):
-        with open(DADOS_FILE, 'w', encoding='utf-8') as f:
-            json.dump([], f, ensure_ascii=False, indent=2)
-    if not os.path.exists(LOG_FILE):
-        open(LOG_FILE, 'a', encoding='utf-8').close()
+    # Garante que o arquivo votos exista
+    if not os.path.exists("dados/votos.json"):
+        with open("dados/votos.json", "w", encoding="utf-8") as f:
+            json.dump([], f)
 
-def ler_dados():
-    garantir_pastas()
-    with open(DADOS_FILE, 'r', encoding='utf-8') as f:
-        return json.load(f)
-
-def salvar_dados(lista):
-    garantir_pastas()
-    with open(DADOS_FILE, 'w', encoding='utf-8') as f:
-        json.dump(lista, f, ensure_ascii=False, indent=2)
+    # Garante que o arquivo de log exista
+    if not os.path.exists("dados/log.txt"):
+        open("dados/log.txt", "a", encoding="utf-8").close()
 
 def registrar_log(acao):
-    garantir_pastas()
-    agora = datetime.now().strftime('%d/%m/%Y %H:%M:%S')
-    linha = f'[{agora}] {acao}\n'
-    with open(LOG_FILE, 'a', encoding='utf-8') as f:
-        f.write(linha)
-
-def cadastrar_candidato(nome):
-    dados = ler_dados()
-    novo = {'id': (max((x['id'] for x in dados), default=0) + 1), 'nome': nome, 'votos': 0}
-    dados.append(novo)
-    salvar_dados(dados)
-    registrar_log(f'Cadastro de candidato: {nome}')
-    return novo
-
-def listar_candidatos():
-    return ler_dados()
-
-def votar(id_candidato):
-    dados = ler_dados()
-    for c in dados:
-        if c['id'] == id_candidato:
-            c['votos'] += 1
-            salvar_dados(dados)
-            registrar_log(f'Voto para candidato id={id_candidato} ({c["nome"]})')
-            return True
-    return False
-
-def editar_candidato(id_candidato, novo_nome):
-    dados = ler_dados()
-    for c in dados:
-        if c['id'] == id_candidato:
-            old = c['nome']
-            c['nome'] = novo_nome
-            salvar_dados(dados)
-            registrar_log(f'Edita candidato id={id_candidato}: {old} -> {novo_nome}')
-            return True
-    return False
-
-def excluir_candidato(id_candidato):
-    dados = ler_dados()
-    novo = [c for c in dados if c['id'] != id_candidato]
-    if len(novo) < len(dados):
-        salvar_dados(novo)
-        registrar_log(f'Exclui candidato id={id_candidato}')
-        return True
-    return False
+    data_hora = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
+    with open("dados/log.txt", "a", encoding="utf-8") as log:
+        log.write(f"[{data_hora}] {acao}\n")
