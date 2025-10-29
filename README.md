@@ -5,7 +5,9 @@
 - [Guilherme Vieira Marques] — RA:1138951
 - [Gabriel de Oliveira] — RA:1139027
 
-**Tema:** Sistema de Votação Simples
+**Tema: Sistema de Votação Simples**
+Este projeto é um sistema de votação desenvolvido em **Python**, executado diretamente pelo terminal.  
+Ele permite **cadastrar candidatos, listar, editar, excluir e registrar votos**, armazenando tudo em arquivos para manter as informações mesmo após fechar o programa.
 
 **Descrição do Sistema**
 O sistema apresenta um menu interativo no terminal, onde o usuário escolhe a ação desejada.  
