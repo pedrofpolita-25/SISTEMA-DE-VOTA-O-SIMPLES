@@ -7,6 +7,20 @@
 
 **Tema:** Sistema de Votação Simples
 
+**Descrição do Sistema**
+O sistema apresenta um menu interativo no terminal, onde o usuário escolhe a ação desejada.  
+Os dados são armazenados no arquivo `dados/votos.json` para que permaneçam salvos entre as execuções do programa.  
+Além disso, todas as ações realizadas são registradas no arquivo `dados/log.txt`, com data e hora, para manter um **histórico de auditoria** do sistema.
+
+**Sistema de Votação Simples**
+O usuário pode:
+- Cadastrar candidatos
+- Listar candidatos existentes
+- Registrar votos
+- Editar informações
+- Excluir um candidato
+- Visualizar resultados
+
 **Descrição:** Programa em Python que permite cadastrar candidatos, listar, votar, editar e excluir. Os dados ficam em dados/votos.json e logs em dados/log.txt.
 
 **Tecnologias:** Python, manipulação de arquivos (.json), modularização (main.py, funcoes.py), tratamento de exceções.
