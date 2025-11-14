@@ -31,5 +31,5 @@ O usuário pode:
 2. Dados salvos em dados/votos.json e logs em dados/log.txt.
 
 **Observações:**
-- Cada integrante deve fazer ao menos 1 commit.
-- Histórico mínimo exigido: 5 commits com mensagens descritivas.
+-Todo o projeto realizado acima foi feito em linguagem Python, usando o VS CODE; 
+-O site está rodando e contabilizando todas as votações.
