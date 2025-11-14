@@ -3,7 +3,6 @@
 **Integrantes**
 - [Pedro Henrique Fernandes Polita] — RA:1138911
 - [Guilherme Vieira Marques] — RA:1138951
-- [Gabriel de Oliveira] — RA:1139027
 
 **Tema: Sistema de Votação Simples**
 Este projeto é um sistema de votação desenvolvido em **Python**, executado diretamente pelo terminal.  
